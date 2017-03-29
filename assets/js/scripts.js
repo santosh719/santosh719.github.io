@@ -244,7 +244,7 @@ jQuery(function ($) {
 
         $('.modal').on('hidden.bs.modal', function () {
         player.api('pause');
-        })
+        });
 
         $('.modal').on('shown.bs.modal', function () {
         player.api('play');
@@ -367,7 +367,7 @@ jQuery(function ($) {
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 disableDefaultUI: true,
                 styles: styles
-            }
+            };
             var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
 
             var marker = new google.maps.Marker({
