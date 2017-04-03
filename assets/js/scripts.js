@@ -327,7 +327,7 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     (function () {
-        var myLatlng = new google.maps.LatLng(41.372641, -74.687387);
+        var myLatlng = new google.maps.LatLng(33.421742, -111.923035);
 
             var styles = [
                 {
@@ -374,7 +374,7 @@ jQuery(function ($) {
                 position: myLatlng,
                 map: map,
                 animation: google.maps.Animation.DROP,
-                title: 'Hello World!'
+                title: 'Hello there!'
             });
 
             var contentString = '' +
