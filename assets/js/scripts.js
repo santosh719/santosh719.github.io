@@ -293,12 +293,14 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     $('#contactForm').on('submit',function(e){
+        var $this = $(this);
+        $this.before( '<div class="alert alert-success">'+data.message+'<p><strong>Thank you for your message!</strong></p></div>' );
 
         e.preventDefault();
 
         var $action = $(this).prop('action');
         var $data = $(this).serialize();
-        var $this = $(this);
+
 
         $this.prevAll('.alert').remove();
 
